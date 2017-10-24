@@ -40,19 +40,19 @@ namespace Lab28Tom
                 options.AccessDeniedPath = new PathString("/Account/Forbidden/"));
 
 
-            services.AddAuthentication().AddFacebook(facebook =>
-            {
-                facebook.ClientId = Configuration["Authentication:Facebook:AppId"];
-                facebook.ClientSecret = Configuration["Authentication:Facebook:AppSecret"];
-            }
-            );
-
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("Admin Only", policy => policy.RequireRole("Administrator"));
                 options.AddPolicy("Minimum Power", policy => policy.Requirements.Add(new PowerLevelRequirement()));
             }
             );
+
+            services.AddAuthentication().AddFacebook(facebook =>
+            {
+                facebook.ClientId = Configuration["Authentication:Facebook:AppId"];
+                facebook.ClientSecret = Configuration["Authentication:Facebook:AppSecret"];
+            }
+);
 
             //dependency injection
             services.AddSingleton<IAuthorizationHandler, MeetsPowerReq>();

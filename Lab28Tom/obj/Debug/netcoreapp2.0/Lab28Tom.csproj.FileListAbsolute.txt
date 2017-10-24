@@ -31,3 +31,4 @@ C:\Users\Tom\Source\Repos\Lab31-OAuth\Lab28Tom\obj\Debug\netcoreapp2.0\Lab28Tom.
 C:\Users\Tom\Source\Repos\Lab31-OAuth\Lab28Tom\obj\Debug\netcoreapp2.0\Lab28Tom.AssemblyInfo.cs
 C:\Users\Tom\Source\Repos\Lab31-OAuth\Lab28Tom\obj\Debug\netcoreapp2.0\Lab28Tom.dll
 C:\Users\Tom\Source\Repos\Lab31-OAuth\Lab28Tom\obj\Debug\netcoreapp2.0\Lab28Tom.pdb
+C:\Users\Tom\Source\Repos\Lab31-OAuth\Lab28Tom\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
